@@ -1,0 +1,434 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D2097D0F23E39D6B00AED208 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D2097D0E23E39D6B00AED208 /* GoogleService-Info.plist */; };
+		D20F12E423E1E1B3005D3EA2 /* TicketCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20F12E323E1E1B3005D3EA2 /* TicketCell.swift */; };
+		D20F12E623E1E838005D3EA2 /* Ticket.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20F12E523E1E838005D3EA2 /* Ticket.swift */; };
+		D20F12E823E1E89A005D3EA2 /* TicketDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20F12E723E1E89A005D3EA2 /* TicketDataSource.swift */; };
+		D20F12EA23E1F396005D3EA2 /* DetailTicketVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20F12E923E1F396005D3EA2 /* DetailTicketVC.swift */; };
+		D2949F7623E1D71900111D57 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2949F7523E1D71900111D57 /* AppDelegate.swift */; };
+		D2949F7823E1D71900111D57 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2949F7723E1D71900111D57 /* SceneDelegate.swift */; };
+		D2949F7A23E1D71900111D57 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2949F7923E1D71900111D57 /* ViewController.swift */; };
+		D2949F7D23E1D71900111D57 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2949F7B23E1D71900111D57 /* Main.storyboard */; };
+		D2949F7F23E1D71B00111D57 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2949F7E23E1D71B00111D57 /* Assets.xcassets */; };
+		D2949F8223E1D71B00111D57 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2949F8023E1D71B00111D57 /* LaunchScreen.storyboard */; };
+		F2DEEF163C89C59B127ACB83 /* Pods_FlyMeToTheMoon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3601A04EC9EAC3314B1AC880 /* Pods_FlyMeToTheMoon.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0CB97B065B91CA0BD907000C /* Pods-FlyMeToTheMoon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlyMeToTheMoon.debug.xcconfig"; path = "Target Support Files/Pods-FlyMeToTheMoon/Pods-FlyMeToTheMoon.debug.xcconfig"; sourceTree = "<group>"; };
+		3601A04EC9EAC3314B1AC880 /* Pods_FlyMeToTheMoon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlyMeToTheMoon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2F4F508A947EA8C1CE6B9BF /* Pods-FlyMeToTheMoon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlyMeToTheMoon.release.xcconfig"; path = "Target Support Files/Pods-FlyMeToTheMoon/Pods-FlyMeToTheMoon.release.xcconfig"; sourceTree = "<group>"; };
+		D2097D0E23E39D6B00AED208 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D20F12E323E1E1B3005D3EA2 /* TicketCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketCell.swift; sourceTree = "<group>"; };
+		D20F12E523E1E838005D3EA2 /* Ticket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ticket.swift; sourceTree = "<group>"; };
+		D20F12E723E1E89A005D3EA2 /* TicketDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketDataSource.swift; sourceTree = "<group>"; };
+		D20F12E923E1F396005D3EA2 /* DetailTicketVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTicketVC.swift; sourceTree = "<group>"; };
+		D2949F7223E1D71900111D57 /* FlyMeToTheMoon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlyMeToTheMoon.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2949F7523E1D71900111D57 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D2949F7723E1D71900111D57 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		D2949F7923E1D71900111D57 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D2949F7C23E1D71900111D57 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D2949F7E23E1D71B00111D57 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D2949F8123E1D71B00111D57 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D2949F8323E1D71B00111D57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D2949F6F23E1D71900111D57 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2DEEF163C89C59B127ACB83 /* Pods_FlyMeToTheMoon.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		322DB9730746B5AA8FA422EF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3601A04EC9EAC3314B1AC880 /* Pods_FlyMeToTheMoon.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5C32D07A04CBD87A00379F2B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0CB97B065B91CA0BD907000C /* Pods-FlyMeToTheMoon.debug.xcconfig */,
+				C2F4F508A947EA8C1CE6B9BF /* Pods-FlyMeToTheMoon.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D2949F6923E1D71900111D57 = {
+			isa = PBXGroup;
+			children = (
+				D2949F7423E1D71900111D57 /* FlyMeToTheMoon */,
+				D2949F7323E1D71900111D57 /* Products */,
+				5C32D07A04CBD87A00379F2B /* Pods */,
+				322DB9730746B5AA8FA422EF /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D2949F7323E1D71900111D57 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D2949F7223E1D71900111D57 /* FlyMeToTheMoon.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D2949F7423E1D71900111D57 /* FlyMeToTheMoon */ = {
+			isa = PBXGroup;
+			children = (
+				D2097D0E23E39D6B00AED208 /* GoogleService-Info.plist */,
+				D2949F7523E1D71900111D57 /* AppDelegate.swift */,
+				D2949F7723E1D71900111D57 /* SceneDelegate.swift */,
+				D2949F7923E1D71900111D57 /* ViewController.swift */,
+				D20F12E923E1F396005D3EA2 /* DetailTicketVC.swift */,
+				D20F12E323E1E1B3005D3EA2 /* TicketCell.swift */,
+				D20F12E523E1E838005D3EA2 /* Ticket.swift */,
+				D20F12E723E1E89A005D3EA2 /* TicketDataSource.swift */,
+				D2949F7B23E1D71900111D57 /* Main.storyboard */,
+				D2949F7E23E1D71B00111D57 /* Assets.xcassets */,
+				D2949F8023E1D71B00111D57 /* LaunchScreen.storyboard */,
+				D2949F8323E1D71B00111D57 /* Info.plist */,
+			);
+			path = FlyMeToTheMoon;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D2949F7123E1D71900111D57 /* FlyMeToTheMoon */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D2949F8623E1D71B00111D57 /* Build configuration list for PBXNativeTarget "FlyMeToTheMoon" */;
+			buildPhases = (
+				4D94665CD3D2F027DBDBFDDB /* [CP] Check Pods Manifest.lock */,
+				D2949F6E23E1D71900111D57 /* Sources */,
+				D2949F6F23E1D71900111D57 /* Frameworks */,
+				D2949F7023E1D71900111D57 /* Resources */,
+				996B00DFEA917C3A6B183375 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FlyMeToTheMoon;
+			productName = FlyMeToTheMoon;
+			productReference = D2949F7223E1D71900111D57 /* FlyMeToTheMoon.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D2949F6A23E1D71900111D57 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = Omsi;
+				TargetAttributes = {
+					D2949F7123E1D71900111D57 = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+				};
+			};
+			buildConfigurationList = D2949F6D23E1D71900111D57 /* Build configuration list for PBXProject "FlyMeToTheMoon" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D2949F6923E1D71900111D57;
+			productRefGroup = D2949F7323E1D71900111D57 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D2949F7123E1D71900111D57 /* FlyMeToTheMoon */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D2949F7023E1D71900111D57 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2097D0F23E39D6B00AED208 /* GoogleService-Info.plist in Resources */,
+				D2949F8223E1D71B00111D57 /* LaunchScreen.storyboard in Resources */,
+				D2949F7F23E1D71B00111D57 /* Assets.xcassets in Resources */,
+				D2949F7D23E1D71900111D57 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4D94665CD3D2F027DBDBFDDB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FlyMeToTheMoon-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		996B00DFEA917C3A6B183375 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FlyMeToTheMoon/Pods-FlyMeToTheMoon-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FlyMeToTheMoon/Pods-FlyMeToTheMoon-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FlyMeToTheMoon/Pods-FlyMeToTheMoon-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D2949F6E23E1D71900111D57 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2949F7A23E1D71900111D57 /* ViewController.swift in Sources */,
+				D2949F7623E1D71900111D57 /* AppDelegate.swift in Sources */,
+				D20F12EA23E1F396005D3EA2 /* DetailTicketVC.swift in Sources */,
+				D20F12E623E1E838005D3EA2 /* Ticket.swift in Sources */,
+				D2949F7823E1D71900111D57 /* SceneDelegate.swift in Sources */,
+				D20F12E823E1E89A005D3EA2 /* TicketDataSource.swift in Sources */,
+				D20F12E423E1E1B3005D3EA2 /* TicketCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D2949F7B23E1D71900111D57 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D2949F7C23E1D71900111D57 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D2949F8023E1D71B00111D57 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D2949F8123E1D71B00111D57 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D2949F8423E1D71B00111D57 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D2949F8523E1D71B00111D57 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D2949F8723E1D71B00111D57 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0CB97B065B91CA0BD907000C /* Pods-FlyMeToTheMoon.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9VCECTYT2E;
+				INFOPLIST_FILE = FlyMeToTheMoon/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Omsi.FlyMeToTheMoon;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D2949F8823E1D71B00111D57 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C2F4F508A947EA8C1CE6B9BF /* Pods-FlyMeToTheMoon.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9VCECTYT2E;
+				INFOPLIST_FILE = FlyMeToTheMoon/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Omsi.FlyMeToTheMoon;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D2949F6D23E1D71900111D57 /* Build configuration list for PBXProject "FlyMeToTheMoon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2949F8423E1D71B00111D57 /* Debug */,
+				D2949F8523E1D71B00111D57 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D2949F8623E1D71B00111D57 /* Build configuration list for PBXNativeTarget "FlyMeToTheMoon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2949F8723E1D71B00111D57 /* Debug */,
+				D2949F8823E1D71B00111D57 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D2949F6A23E1D71900111D57 /* Project object */;
+}
