@@ -2,7 +2,7 @@
 import UIKit
 import Firebase
 
-class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class HomeVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     
     var tickets: [Ticket] = []

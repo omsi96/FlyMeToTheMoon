@@ -7,10 +7,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--HomeVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="Main" id="BYZ-38-t0r" customClass="ViewController" customModule="FlyMeToTheMoon" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Main" id="BYZ-38-t0r" customClass="HomeVC" customModule="FlyMeToTheMoon" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -18,7 +18,7 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" image="BG" translatesAutoresizingMaskIntoConstraints="NO" id="IEL-OM-7J8">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="901"/>
                             </imageView>
-                            <tableView contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="120" estimatedRowHeight="120" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="KnR-zu-ykb">
+                            <tableView contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="120" estimatedRowHeight="120" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="KnR-zu-ykb">
                                 <rect key="frame" x="0.0" y="5" width="414" height="896"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
@@ -199,6 +199,7 @@
                             <constraint firstItem="KDF-i4-1cc" firstAttribute="leading" secondItem="coC-tP-9Gt" secondAttribute="trailing" constant="50" id="9EL-1z-YBs"/>
                             <constraint firstItem="DCK-eu-AVW" firstAttribute="leading" secondItem="coC-tP-9Gt" secondAttribute="trailing" constant="-125" id="D9N-sO-yRt"/>
                             <constraint firstItem="HIU-Sa-clX" firstAttribute="centerX" secondItem="coC-tP-9Gt" secondAttribute="centerX" id="Eg7-2A-Znj"/>
+                            <constraint firstItem="fas-gd-aNT" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="IjO-dT-T0X" secondAttribute="leading" symbolic="YES" id="Ia3-9h-qPN"/>
                             <constraint firstItem="DCK-eu-AVW" firstAttribute="centerX" secondItem="IjO-dT-T0X" secondAttribute="centerX" id="J2S-Nu-cZM"/>
                             <constraint firstItem="HIU-Sa-clX" firstAttribute="top" secondItem="coC-tP-9Gt" secondAttribute="bottom" id="OZB-l1-tw4"/>
                             <constraint firstItem="fas-gd-aNT" firstAttribute="trailing" secondItem="iB5-KQ-HQq" secondAttribute="trailing" id="REx-SU-Kna"/>
@@ -210,6 +211,8 @@
                             <constraint firstItem="fas-gd-aNT" firstAttribute="top" secondItem="iB5-KQ-HQq" secondAttribute="bottom" constant="48" id="b6A-tP-FzN"/>
                             <constraint firstItem="iB5-KQ-HQq" firstAttribute="top" secondItem="xUC-xS-wiK" secondAttribute="bottom" constant="7" id="cR3-rR-ocw"/>
                             <constraint firstItem="DCK-eu-AVW" firstAttribute="bottom" secondItem="IjO-dT-T0X" secondAttribute="bottom" constant="88" id="eXa-im-VbU"/>
+                            <constraint firstItem="xUC-xS-wiK" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="KDF-i4-1cc" secondAttribute="trailing" constant="8" symbolic="YES" id="jcu-Zc-iqM"/>
+                            <constraint firstItem="iB5-KQ-HQq" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="cB4-N9-KrN" secondAttribute="trailing" constant="8" symbolic="YES" id="l5r-Pt-mjQ"/>
                             <constraint firstItem="RPF-pl-HMb" firstAttribute="centerY" secondItem="IjO-dT-T0X" secondAttribute="centerY" id="neZ-df-B85"/>
                             <constraint firstItem="KDF-i4-1cc" firstAttribute="top" secondItem="coC-tP-9Gt" secondAttribute="top" id="oIz-zI-2hw"/>
                             <constraint firstItem="RPF-pl-HMb" firstAttribute="width" secondItem="ovF-jw-BKn" secondAttribute="width" id="rBw-Nb-8ZA"/>
