@@ -3,11 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		D2097D0F23E39D6B00AED208 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D2097D0E23E39D6B00AED208 /* GoogleService-Info.plist */; };
+		D2097D3123E4E64400AED208 /* Auth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2097D3023E4E64400AED208 /* Auth.storyboard */; };
+		D2097D3323E4E6C200AED208 /* IBElements.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2097D3223E4E6C200AED208 /* IBElements.swift */; };
+		D2097D3A23E4F6D200AED208 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2097D3923E4F6D200AED208 /* SignInVC.swift */; };
 		D20F12E423E1E1B3005D3EA2 /* TicketCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20F12E323E1E1B3005D3EA2 /* TicketCell.swift */; };
 		D20F12E623E1E838005D3EA2 /* Ticket.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20F12E523E1E838005D3EA2 /* Ticket.swift */; };
 		D20F12E823E1E89A005D3EA2 /* TicketDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20F12E723E1E89A005D3EA2 /* TicketDataSource.swift */; };
@@ -26,6 +29,9 @@
 		3601A04EC9EAC3314B1AC880 /* Pods_FlyMeToTheMoon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlyMeToTheMoon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2F4F508A947EA8C1CE6B9BF /* Pods-FlyMeToTheMoon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlyMeToTheMoon.release.xcconfig"; path = "Target Support Files/Pods-FlyMeToTheMoon/Pods-FlyMeToTheMoon.release.xcconfig"; sourceTree = "<group>"; };
 		D2097D0E23E39D6B00AED208 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D2097D3023E4E64400AED208 /* Auth.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Auth.storyboard; sourceTree = "<group>"; };
+		D2097D3223E4E6C200AED208 /* IBElements.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IBElements.swift; sourceTree = "<group>"; };
+		D2097D3923E4F6D200AED208 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
 		D20F12E323E1E1B3005D3EA2 /* TicketCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketCell.swift; sourceTree = "<group>"; };
 		D20F12E523E1E838005D3EA2 /* Ticket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ticket.swift; sourceTree = "<group>"; };
 		D20F12E723E1E89A005D3EA2 /* TicketDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketDataSource.swift; sourceTree = "<group>"; };
@@ -66,8 +72,53 @@
 				0CB97B065B91CA0BD907000C /* Pods-FlyMeToTheMoon.debug.xcconfig */,
 				C2F4F508A947EA8C1CE6B9BF /* Pods-FlyMeToTheMoon.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		D2097D3423E4F66200AED208 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D2097D3623E4F66D00AED208 /* Auth */,
+				D2097D3523E4F66900AED208 /* Home */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		D2097D3523E4F66900AED208 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				D2949F7923E1D71900111D57 /* ViewController.swift */,
+				D20F12E923E1F396005D3EA2 /* DetailTicketVC.swift */,
+				D20F12E323E1E1B3005D3EA2 /* TicketCell.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		D2097D3623E4F66D00AED208 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				D2097D3923E4F6D200AED208 /* SignInVC.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		D2097D3723E4F67C00AED208 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D20F12E523E1E838005D3EA2 /* Ticket.swift */,
+				D20F12E723E1E89A005D3EA2 /* TicketDataSource.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D2097D3823E4F68F00AED208 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				D2949F7B23E1D71900111D57 /* Main.storyboard */,
+				D2097D3023E4E64400AED208 /* Auth.storyboard */,
+				D2949F8023E1D71B00111D57 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 		D2949F6923E1D71900111D57 = {
@@ -91,17 +142,14 @@
 		D2949F7423E1D71900111D57 /* FlyMeToTheMoon */ = {
 			isa = PBXGroup;
 			children = (
+				D2097D3823E4F68F00AED208 /* Storyboards */,
+				D2097D3723E4F67C00AED208 /* Models */,
+				D2097D3423E4F66200AED208 /* Controllers */,
+				D2097D3223E4E6C200AED208 /* IBElements.swift */,
 				D2097D0E23E39D6B00AED208 /* GoogleService-Info.plist */,
 				D2949F7523E1D71900111D57 /* AppDelegate.swift */,
 				D2949F7723E1D71900111D57 /* SceneDelegate.swift */,
-				D2949F7923E1D71900111D57 /* ViewController.swift */,
-				D20F12E923E1F396005D3EA2 /* DetailTicketVC.swift */,
-				D20F12E323E1E1B3005D3EA2 /* TicketCell.swift */,
-				D20F12E523E1E838005D3EA2 /* Ticket.swift */,
-				D20F12E723E1E89A005D3EA2 /* TicketDataSource.swift */,
-				D2949F7B23E1D71900111D57 /* Main.storyboard */,
 				D2949F7E23E1D71B00111D57 /* Assets.xcassets */,
-				D2949F8023E1D71B00111D57 /* LaunchScreen.storyboard */,
 				D2949F8323E1D71B00111D57 /* Info.plist */,
 			);
 			path = FlyMeToTheMoon;
@@ -171,6 +219,7 @@
 				D2949F8223E1D71B00111D57 /* LaunchScreen.storyboard in Resources */,
 				D2949F7F23E1D71B00111D57 /* Assets.xcassets in Resources */,
 				D2949F7D23E1D71900111D57 /* Main.storyboard in Resources */,
+				D2097D3123E4E64400AED208 /* Auth.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,7 +274,9 @@
 			files = (
 				D2949F7A23E1D71900111D57 /* ViewController.swift in Sources */,
 				D2949F7623E1D71900111D57 /* AppDelegate.swift in Sources */,
+				D2097D3A23E4F6D200AED208 /* SignInVC.swift in Sources */,
 				D20F12EA23E1F396005D3EA2 /* DetailTicketVC.swift in Sources */,
+				D2097D3323E4E6C200AED208 /* IBElements.swift in Sources */,
 				D20F12E623E1E838005D3EA2 /* Ticket.swift in Sources */,
 				D2949F7823E1D71900111D57 /* SceneDelegate.swift in Sources */,
 				D20F12E823E1E89A005D3EA2 /* TicketDataSource.swift in Sources */,
