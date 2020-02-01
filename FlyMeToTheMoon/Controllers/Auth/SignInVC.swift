@@ -38,6 +38,8 @@ class SignInVC: UIViewController {
     {
         if username == "omsi96@gmail.com" && password == "1234"
         {
+            // Saving data to User default
+            UserDefaults.standard.setValue(true, forKey: "signed")
             // completion
             completion()
         }

@@ -51,7 +51,9 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
                 tickets.append(ticket)
             }
             self.tickets = tickets
-            self.tableView.reloadData()
+            DispatchQueue.main.async{
+                self.tableView.reloadData()
+            }
         }
         
         
