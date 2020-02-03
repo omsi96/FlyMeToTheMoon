@@ -6,10 +6,8 @@
 //  Copyright © 2020 Omsi. All rights reserved.
 //
 
-import UIKit
-import Firebase
-
-// Hi Abdullah!
+// Hey Abdullah, it's Nancy!
+// We're changes made to AddDelegate
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
