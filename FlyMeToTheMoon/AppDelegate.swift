@@ -9,7 +9,7 @@
 import UIKit
 import Firebase
 
-// Hi Abdullah!
+// Hi Nancy!
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
