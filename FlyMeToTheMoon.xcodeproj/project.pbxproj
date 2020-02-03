@@ -14,6 +14,7 @@
 		D2097D3C23E508BC00AED208 /* Admin.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2097D3B23E508BC00AED208 /* Admin.storyboard */; };
 		D2097D3F23E524CB00AED208 /* AdminVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2097D3E23E5209500AED208 /* AdminVC.swift */; };
 		D2097D4123E52C5C00AED208 /* NewTicketVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2097D4023E52C5C00AED208 /* NewTicketVC.swift */; };
+		D2097D4523E619EE00AED208 /* Tickets.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2097D4423E619EE00AED208 /* Tickets.storyboard */; };
 		D20F12E423E1E1B3005D3EA2 /* TicketCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20F12E323E1E1B3005D3EA2 /* TicketCell.swift */; };
 		D20F12E623E1E838005D3EA2 /* Ticket.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20F12E523E1E838005D3EA2 /* Ticket.swift */; };
 		D20F12E823E1E89A005D3EA2 /* TicketDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20F12E723E1E89A005D3EA2 /* TicketDataSource.swift */; };
@@ -38,6 +39,7 @@
 		D2097D3B23E508BC00AED208 /* Admin.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Admin.storyboard; sourceTree = "<group>"; };
 		D2097D3E23E5209500AED208 /* AdminVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminVC.swift; sourceTree = "<group>"; };
 		D2097D4023E52C5C00AED208 /* NewTicketVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTicketVC.swift; sourceTree = "<group>"; };
+		D2097D4423E619EE00AED208 /* Tickets.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Tickets.storyboard; sourceTree = "<group>"; };
 		D20F12E323E1E1B3005D3EA2 /* TicketCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketCell.swift; sourceTree = "<group>"; };
 		D20F12E523E1E838005D3EA2 /* Ticket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ticket.swift; sourceTree = "<group>"; };
 		D20F12E723E1E89A005D3EA2 /* TicketDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketDataSource.swift; sourceTree = "<group>"; };
@@ -123,6 +125,7 @@
 			children = (
 				D2949F7B23E1D71900111D57 /* Main.storyboard */,
 				D2097D3023E4E64400AED208 /* Auth.storyboard */,
+				D2097D4423E619EE00AED208 /* Tickets.storyboard */,
 				D2949F8023E1D71B00111D57 /* LaunchScreen.storyboard */,
 				D2097D3B23E508BC00AED208 /* Admin.storyboard */,
 			);
@@ -235,6 +238,7 @@
 				D2097D0F23E39D6B00AED208 /* GoogleService-Info.plist in Resources */,
 				D2949F8223E1D71B00111D57 /* LaunchScreen.storyboard in Resources */,
 				D2949F7F23E1D71B00111D57 /* Assets.xcassets in Resources */,
+				D2097D4523E619EE00AED208 /* Tickets.storyboard in Resources */,
 				D2949F7D23E1D71900111D57 /* Main.storyboard in Resources */,
 				D2097D3C23E508BC00AED208 /* Admin.storyboard in Resources */,
 				D2097D3123E4E64400AED208 /* Auth.storyboard in Resources */,
