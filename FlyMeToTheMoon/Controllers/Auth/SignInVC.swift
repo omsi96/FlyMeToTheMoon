@@ -24,22 +24,22 @@ class SignInVC: UIViewController {
     @IBAction func signIn()
     {
         /// TODO:  do the sign in api call here
-        fakeSignIn(username: emailField.text!, password: passwordField.text!) {
-            
-            performSegue(withIdentifier: "signedIn", sender: nil)
-//            guard let mySceneDelegate = self.view.window?.windowScene?.delegate as? SceneDelegate else {fatalError("!")}
-//            mySceneDelegate.redirect(storyBoardName: "Main")
-
-        }
+        fakeSignIn(username: emailField.text!, password: passwordField.text!)
     }
     
     
-    func fakeSignIn(username: String, password: String, completion: ()->())
+    func fakeSignIn(username: String, password: String)
     {
-        if username == "omsi96@gmail.com" && password == "1234"
-        {
-            // completion
-            completion()
+        switch (username, password) {
+        /// **Admin**
+        case ("omsi96", "1234"):
+            performSegue(withIdentifier: "admin", sender: nil)
+        case ("omar", "1234"):
+            performSegue(withIdentifier: "signedIn", sender: nil)
+        case ("abdullah", "1234"):
+            performSegue(withIdentifier: "signedIn", sender: nil)
+        default:
+            print("Wrong username and password")
         }
         
     }
