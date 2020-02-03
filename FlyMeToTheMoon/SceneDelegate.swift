@@ -8,6 +8,8 @@
 
 import UIKit
 
+
+// stage this!
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     
     var window: UIWindow?
