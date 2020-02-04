@@ -83,64 +83,6 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		D2097D3423E4F66200AED208 /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				D2097D3D23E5207100AED208 /* Admin */,
-				D2097D3623E4F66D00AED208 /* Auth */,
-				D2097D3523E4F66900AED208 /* Home */,
-			);
-			path = Controllers;
-			sourceTree = "<group>";
-		};
-		D2097D3523E4F66900AED208 /* Home */ = {
-			isa = PBXGroup;
-			children = (
-				D2949F7923E1D71900111D57 /* HomeVC.swift */,
-				D20F12E923E1F396005D3EA2 /* DetailTicketVC.swift */,
-				D20F12E323E1E1B3005D3EA2 /* TicketCell.swift */,
-			);
-			path = Home;
-			sourceTree = "<group>";
-		};
-		D2097D3623E4F66D00AED208 /* Auth */ = {
-			isa = PBXGroup;
-			children = (
-				D2097D3923E4F6D200AED208 /* SignInVC.swift */,
-			);
-			path = Auth;
-			sourceTree = "<group>";
-		};
-		D2097D3723E4F67C00AED208 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				D20F12E523E1E838005D3EA2 /* Ticket.swift */,
-				D20F12E723E1E89A005D3EA2 /* TicketDataSource.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		D2097D3823E4F68F00AED208 /* Storyboards */ = {
-			isa = PBXGroup;
-			children = (
-				D2949F7B23E1D71900111D57 /* Main.storyboard */,
-				D2097D3023E4E64400AED208 /* Auth.storyboard */,
-				D2097D4423E619EE00AED208 /* Tickets.storyboard */,
-				D2949F8023E1D71B00111D57 /* LaunchScreen.storyboard */,
-				D2097D3B23E508BC00AED208 /* Admin.storyboard */,
-			);
-			path = Storyboards;
-			sourceTree = "<group>";
-		};
-		D2097D3D23E5207100AED208 /* Admin */ = {
-			isa = PBXGroup;
-			children = (
-				D2097D3E23E5209500AED208 /* AdminVC.swift */,
-				D2097D4023E52C5C00AED208 /* NewTicketVC.swift */,
-			);
-			path = Admin;
-			sourceTree = "<group>";
-		};
 		D2949F6923E1D71900111D57 = {
 			isa = PBXGroup;
 			children = (
@@ -162,13 +104,23 @@
 		D2949F7423E1D71900111D57 /* FlyMeToTheMoon */ = {
 			isa = PBXGroup;
 			children = (
-				D2097D3823E4F68F00AED208 /* Storyboards */,
-				D2097D3723E4F67C00AED208 /* Models */,
-				D2097D3423E4F66200AED208 /* Controllers */,
+				D2949F7B23E1D71900111D57 /* Main.storyboard */,
+				D2949F7923E1D71900111D57 /* HomeVC.swift */,
+				D20F12E923E1F396005D3EA2 /* DetailTicketVC.swift */,
+				D20F12E323E1E1B3005D3EA2 /* TicketCell.swift */,
+				D2097D3923E4F6D200AED208 /* SignInVC.swift */,
+				D2097D3E23E5209500AED208 /* AdminVC.swift */,
+				D2097D4023E52C5C00AED208 /* NewTicketVC.swift */,
 				D2097D3223E4E6C200AED208 /* IBElements.swift */,
 				D2097D0E23E39D6B00AED208 /* GoogleService-Info.plist */,
 				D2949F7523E1D71900111D57 /* AppDelegate.swift */,
 				D2949F7723E1D71900111D57 /* SceneDelegate.swift */,
+				D20F12E523E1E838005D3EA2 /* Ticket.swift */,
+				D20F12E723E1E89A005D3EA2 /* TicketDataSource.swift */,
+				D2097D3023E4E64400AED208 /* Auth.storyboard */,
+				D2097D4423E619EE00AED208 /* Tickets.storyboard */,
+				D2949F8023E1D71B00111D57 /* LaunchScreen.storyboard */,
+				D2097D3B23E508BC00AED208 /* Admin.storyboard */,
 				D2949F7E23E1D71B00111D57 /* Assets.xcassets */,
 				D2949F8323E1D71B00111D57 /* Info.plist */,
 			);
