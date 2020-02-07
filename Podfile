@@ -9,5 +9,5 @@ target 'FlyMeToTheMoon' do
   pod 'Firebase/Auth'
   pod 'Firebase/Firestore'
   pod 'Firebase/Analytics'
-
+  pod 'CodableFirebase'
 end

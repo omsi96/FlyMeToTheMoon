@@ -10,53 +10,25 @@ class HomeVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     @IBOutlet weak var tableView: UITableView!
     
+    func successIfTicketIsAvailable(_ tickets : [Ticket])
+    {
+        print("These are the tickets!", tickets)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let ref = Firestore.firestore().collection("tickets")
-        
-        ref.getDocuments { (querySnapshot, error) in
-            guard error == nil else
-            {
-                print("ERROR OCCURED WHILE FETCHING DATA")
-                return
-            }
-            
-            guard let query = querySnapshot else
-            {
-                print("There is no query!")
-                return
-            }
-            // There is query snapshot here
-            var tickets: [Ticket] = []
-            for doc in query.documents
-            {
-                print("🎟 Ticket: ", doc.data())
-                let dic = doc.data()
-                guard let startDate = dic["startDate"] as? String else {return}
-                guard let startTime = dic["startTime"] as? String else {return}
-                guard let endDate = dic["endDate"] as? String else {return}
-                guard let endTime = dic["endTime"] as? String else {return}
-                guard let price = dic["price"] as? Double else {return}
-                guard let currency = dic["currency"] as? String else {return}
-
-
-                let ticket = Ticket(startDate: startDate,
-                                    startTime: startTime,
-                                    endDate: endDate,
-                                    endTime: endTime,
-                                    price: price,
-                                    currency: currency,
-                                    ticketDetails: nil)
-                tickets.append(ticket)
-            }
-            self.tickets = tickets
-            DispatchQueue.main.async{
+        N.getAllTickets(success: { tickets in
+            // success
+            DispatchQueue.main.async {
+                self.tickets = tickets
                 self.tableView.reloadData()
             }
+        }) {
+            // fails
+            print("🔥 FAILED")
         }
-        
-        
+
         // Do any additional setup after loading the view.
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

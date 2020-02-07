@@ -9,7 +9,7 @@
 import Foundation
 
 
-struct Ticket
+struct Ticket: Codable
 {
     var startDate: String
     var startTime: String
@@ -22,7 +22,7 @@ struct Ticket
     
 }
 
-struct TicketDetails
+struct TicketDetails: Codable
 {
     var assemblyPoint: String
 }

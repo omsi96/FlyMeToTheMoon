@@ -19,6 +19,8 @@
 		D20F12E623E1E838005D3EA2 /* Ticket.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20F12E523E1E838005D3EA2 /* Ticket.swift */; };
 		D20F12E823E1E89A005D3EA2 /* TicketDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20F12E723E1E89A005D3EA2 /* TicketDataSource.swift */; };
 		D20F12EA23E1F396005D3EA2 /* DetailTicketVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20F12E923E1F396005D3EA2 /* DetailTicketVC.swift */; };
+		D28E849E23EB094D00FD413F /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = D28E849D23EB094D00FD413F /* Networking.swift */; };
+		D28E84A023EB221C00FD413F /* TicketsNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = D28E849F23EB221C00FD413F /* TicketsNetworking.swift */; };
 		D2949F7623E1D71900111D57 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2949F7523E1D71900111D57 /* AppDelegate.swift */; };
 		D2949F7823E1D71900111D57 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2949F7723E1D71900111D57 /* SceneDelegate.swift */; };
 		D2949F7A23E1D71900111D57 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2949F7923E1D71900111D57 /* HomeVC.swift */; };
@@ -44,6 +46,8 @@
 		D20F12E523E1E838005D3EA2 /* Ticket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ticket.swift; sourceTree = "<group>"; };
 		D20F12E723E1E89A005D3EA2 /* TicketDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketDataSource.swift; sourceTree = "<group>"; };
 		D20F12E923E1F396005D3EA2 /* DetailTicketVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTicketVC.swift; sourceTree = "<group>"; };
+		D28E849D23EB094D00FD413F /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
+		D28E849F23EB221C00FD413F /* TicketsNetworking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketsNetworking.swift; sourceTree = "<group>"; };
 		D2949F7223E1D71900111D57 /* FlyMeToTheMoon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlyMeToTheMoon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2949F7523E1D71900111D57 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D2949F7723E1D71900111D57 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -83,6 +87,49 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		D28E849923EB07C700FD413F /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				D2949F7B23E1D71900111D57 /* Main.storyboard */,
+				D2097D3023E4E64400AED208 /* Auth.storyboard */,
+				D2097D4423E619EE00AED208 /* Tickets.storyboard */,
+				D2949F8023E1D71B00111D57 /* LaunchScreen.storyboard */,
+				D2097D3B23E508BC00AED208 /* Admin.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		D28E849A23EB07D800FD413F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D2949F7923E1D71900111D57 /* HomeVC.swift */,
+				D20F12E923E1F396005D3EA2 /* DetailTicketVC.swift */,
+				D20F12E323E1E1B3005D3EA2 /* TicketCell.swift */,
+				D2097D3923E4F6D200AED208 /* SignInVC.swift */,
+				D2097D3E23E5209500AED208 /* AdminVC.swift */,
+				D2097D4023E52C5C00AED208 /* NewTicketVC.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		D28E849B23EB07ED00FD413F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D20F12E523E1E838005D3EA2 /* Ticket.swift */,
+				D20F12E723E1E89A005D3EA2 /* TicketDataSource.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D28E849C23EB094100FD413F /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				D28E849D23EB094D00FD413F /* Networking.swift */,
+				D28E849F23EB221C00FD413F /* TicketsNetworking.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
 		D2949F6923E1D71900111D57 = {
 			isa = PBXGroup;
 			children = (
@@ -104,24 +151,15 @@
 		D2949F7423E1D71900111D57 /* FlyMeToTheMoon */ = {
 			isa = PBXGroup;
 			children = (
-				D2949F7B23E1D71900111D57 /* Main.storyboard */,
-				D2949F7923E1D71900111D57 /* HomeVC.swift */,
-				D20F12E923E1F396005D3EA2 /* DetailTicketVC.swift */,
-				D20F12E323E1E1B3005D3EA2 /* TicketCell.swift */,
-				D2097D3923E4F6D200AED208 /* SignInVC.swift */,
-				D2097D3E23E5209500AED208 /* AdminVC.swift */,
-				D2097D4023E52C5C00AED208 /* NewTicketVC.swift */,
-				D2097D3223E4E6C200AED208 /* IBElements.swift */,
-				D2097D0E23E39D6B00AED208 /* GoogleService-Info.plist */,
+				D28E849C23EB094100FD413F /* Networking */,
 				D2949F7523E1D71900111D57 /* AppDelegate.swift */,
 				D2949F7723E1D71900111D57 /* SceneDelegate.swift */,
-				D20F12E523E1E838005D3EA2 /* Ticket.swift */,
-				D20F12E723E1E89A005D3EA2 /* TicketDataSource.swift */,
-				D2097D3023E4E64400AED208 /* Auth.storyboard */,
-				D2097D4423E619EE00AED208 /* Tickets.storyboard */,
-				D2949F8023E1D71B00111D57 /* LaunchScreen.storyboard */,
-				D2097D3B23E508BC00AED208 /* Admin.storyboard */,
+				D28E849B23EB07ED00FD413F /* Models */,
+				D28E849923EB07C700FD413F /* Storyboard */,
+				D28E849A23EB07D800FD413F /* Controllers */,
+				D2097D3223E4E6C200AED208 /* IBElements.swift */,
 				D2949F7E23E1D71B00111D57 /* Assets.xcassets */,
+				D2097D0E23E39D6B00AED208 /* GoogleService-Info.plist */,
 				D2949F8323E1D71B00111D57 /* Info.plist */,
 			);
 			path = FlyMeToTheMoon;
@@ -249,8 +287,10 @@
 				D2097D3F23E524CB00AED208 /* AdminVC.swift in Sources */,
 				D2949F7A23E1D71900111D57 /* HomeVC.swift in Sources */,
 				D2949F7623E1D71900111D57 /* AppDelegate.swift in Sources */,
+				D28E849E23EB094D00FD413F /* Networking.swift in Sources */,
 				D2097D3A23E4F6D200AED208 /* SignInVC.swift in Sources */,
 				D20F12EA23E1F396005D3EA2 /* DetailTicketVC.swift in Sources */,
+				D28E84A023EB221C00FD413F /* TicketsNetworking.swift in Sources */,
 				D2097D3323E4E6C200AED208 /* IBElements.swift in Sources */,
 				D20F12E623E1E838005D3EA2 /* Ticket.swift in Sources */,
 				D2097D4123E52C5C00AED208 /* NewTicketVC.swift in Sources */,
